@@ -1,0 +1,603 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jura', sans-serif;
+  overflow-x: hidden;
+}
+.main-page {
+  background-image: url(./img/device.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-page__bg {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  width: auto;
+  height: 100px;
+  position: relative;
+  animation: change 15s ease-in-out infinite;    
+}
+@keyframes change {
+  0% {
+   background-position: 0 50%;
+  }
+  50% {
+   background-position: 100% 50%;
+  }
+  100% {
+   background-position: 0 50%;
+  }  
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 100px;
+  height: 80px;
+  padding: 13px 0 0 20px;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  padding:0;
+  margin-left: -200px;
+}
+
+.header-description {
+  color: rgb(83, 83, 83);
+  font-weight: 600;
+  font-size: 1em;
+  text-shadow: 2px 0 3px rgb(156, 156, 156);
+  padding: 10px 0 10px 0;
+}
+
+.header-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 20px;
+  margin-top: -20px;
+}
+
+.header__icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__icon {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.header-link {
+  color: rgb(178, 40, 46);
+  text-shadow: 0 2px 2px rgb(155, 27, 34);
+}
+
+/*MAIN PAGE*/
+
+.info-desk {
+  width: 100%;
+  height: auto;
+  margin: 0 0 50px 0;
+}
+
+.info-desk__name {
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 900;
+  color: white;
+  padding: 50px 250px 50px 250px;
+  background: rgba(24, 24, 24, 0.7);
+  margin-bottom: 30px;
+}
+
+.info-desk__group {
+  padding: 30px 20% 30px 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info-desk__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 20px 0 0
+}
+
+.info-desk__descritpion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  padding:  10px 10px 10px 20px;
+  background: rgba(41, 41, 41, 0.7);
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.info-desk__text {
+  color: rgb(206, 206, 206)
+}
+
+/*OFFER*/
+
+.offer {
+  background-image: url(/img/60.png);
+  background-repeat: repeat;
+  width: 100%;
+  padding: 0 0 20px 0;
+  margin: 0;
+  border: 2px solid black;
+}
+
+.offer__title {
+  margin: 0;
+  padding: 0 25% 0 25%;
+  font-size: 2em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 2px 3px rgb(168, 168, 168);
+}
+
+.offer__group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.offer__point {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  padding:  0 1% 0 1%;
+}
+
+.offer__photo {
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.offer__descr {
+  color: white;
+  padding: 10px;
+}
+
+/*GALLERY*/
+
+.gallery {
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.gallery__page {
+  filter: grayscale(1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  color:rgb(70, 69, 69);
+  border: 5px solid white;
+}
+
+.gallery__page:hover {
+filter: none;
+color:rgb(15, 0, 0);
+}
+
+.gallery__img {
+  width: 100%;
+}
+
+.gallery__title {
+  position: absolute;
+  font-size: 3em;
+  padding: 20px;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+/*PRICE*/
+
+.prices {
+  text-align: center;
+}
+
+.prices__title {
+  font-size: 2em;
+  text-shadow: 0px 2px 3px rgb(54, 54, 54);
+  padding: 20px 0 0 0;
+}
+
+.prices__together {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.prices__rent {
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px rgb(48, 44, 44);
+  width: 20%;
+  padding: 3%;
+  margin: 20px 30px;
+  transition: 0.5s ease-in-out;
+}
+
+.prices__rent:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgb(121, 38, 38)
+}
+
+.prices__rent::after {
+  transform: scale(1.0);
+}
+
+.prices_name {
+  font-size: 1.4em;
+  border: 15px solid rgb(178, 40, 46);
+  padding: 30px 10px;
+}
+
+.prices__cost {
+  font-size: 2em;
+  text-shadow: 0 0 4px rgb(0, 0, 0);
+  padding: 10px 0px;
+}
+
+.prices__info {
+  padding: 20px 0 0 0;
+  font-size: 1.2em;
+}
+
+.regulations__all {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px 0 50px;
+}
+
+.regulations__piont {
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 30px 0;
+}
+
+.regulations__icon {
+  width: 80px;
+  height: 80px;
+}
+
+.regulations__descr {
+  width: 350px;
+  padding:  0 25px;
+}
+
+/*FOOTER*/
+
+.footer {
+  background: #000;
+  color: white
+}
+
+.footer__descr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__item {
+  padding: 20px 30px;
+}
+
+.footer__rights {
+  text-align: center;
+  color: rgb(178, 40, 46);
+  margin: 20px;
+  font-size: 0.8em;
+}
+
+.footer__link {
+  color: rgb(178, 40, 46);
+}
+
+.footer__icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__icon {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+@media (min-width:1281px) and (max-width:1920px) {
+  .main-page {
+    background-image: url(./img/device_big.jpg);
+  }
+
+
+  .info-desk__icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .info-desk__title {
+    font-size: 2rem;
+    white-space: pre-line;
+  }
+
+  .info-desk__text {
+    font-size: 1.5rem;
+    white-space: pre-line;
+  }
+
+  .info-desk__group {
+    padding: 20px 0 20px 15%;  
+  }
+
+  .offer__descr {
+    font-size: 1.3rem;
+    padding: 20px;
+  }
+
+  .gallery__title {
+    font-size: 5rem;
+  }
+
+  .prices_name {
+    font-size: 2rem;
+  }
+  
+  .prices__info {
+    font-size: 1.5rem;
+  }
+
+  .regulations__icon {
+    width: 130px;
+    height: 130px;
+    padding: 20px;
+  }
+
+  .regulations__piont {
+    width: 50%;
+  }
+
+  .regulations__all {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+
+  .regulations__piont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .regulations__descr {
+    text-align: center;
+  }
+
+  .offer__descr {
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width:1024px) and (min-width:450px) {
+
+
+  .info-desk__name {
+    padding: 30px 50px;
+  }
+
+  .info-desk__group {
+    padding: 20px;
+  }
+
+  .info-desk__icon {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+
+  .info-desk__title {
+    font-size: 0.8rem;
+    white-space: pre-line;
+  }
+
+  .info-desk__text {
+    font-size: 0.6rem;
+    white-space: pre-line;
+  }
+
+  .info-desk__descritpion {
+    margin: 10px;
+  }
+
+  .offer__title {
+    padding: 0 20px;
+  }
+
+  .offer__group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .offer__point {
+    width: 99%;
+    padding: 0
+  }
+
+  .gallery__page {
+    filter: grayscale(0);
+  }
+
+  .gallery__page:hover {
+    filter: grayscale(none);
+  }
+
+  .gallery__title {
+    text-align: center;
+  }
+
+  .prices__together {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .prices__rent {
+    width: 70%;
+  }
+}
+
+@media (max-width:450px) and (min-width:320px) {
+
+
+  .info-desk__name {
+    padding: 30px 50px;
+    font-size: 1rem;
+  }
+
+  .info-desk {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .info-desk__group {
+    padding: 5px;
+  }
+
+  .info-desk__icon {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+
+  .info-desk__title {
+    font-size: 0.8rem;
+    white-space: pre-line;
+    color: rgb(255, 255, 255);
+  }
+
+  .info-desk__text {
+    font-size: 0.6rem;
+    white-space: pre-line;
+    color: rgb(224, 223, 223);
+  }
+
+  .info-desk__descritpion {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .offer__title {
+    padding: 10px;
+  }
+
+  .offer__group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .offer__descr {
+    text-align: center;
+  }
+
+  .offer__point {
+    width: 99%;
+    padding: 0
+  }
+
+  .gallery__title {
+    text-align: center;
+  }
+
+  .prices__together {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .prices__rent {
+    width: 70%;
+  }
+
+  .gallery__page {
+    filter: grayscale(0);
+  }
+
+  .gallery__page:hover {
+    filter: grayscale(none);
+  }
+
+  .gallery__title {
+    font-size: 2rem;
+    color: black;
+  }
+  .prices__title {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .regulations__all {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .regulations__piont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .regulations__descr {
+    width: 96%;
+    padding: 1% 2%;
+    text-align: center;
+  }
+
+  .footer__descr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__icons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
