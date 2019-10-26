@@ -105,10 +105,12 @@
 }
 
 .info-desk__group {
-  padding: 30px 20% 30px 20%;
+  padding: 30px 20%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-content: space-between;
+  width: 90%;
 }
 
 .info-desk__icon {
@@ -126,16 +128,17 @@
   background: rgba(41, 41, 41, 0.7);
   border-radius: 20px;
   white-space: nowrap;
+  white-space: pre-line;
 }
 
 .info-desk__text {
-  color: rgb(206, 206, 206)
+  color: rgb(206, 206, 206);
 }
 
 /*OFFER*/
 
 .offer {
-  background-image: url(/img/60.png);
+  background-image: url(/img/60.jpg);
   background-repeat: repeat;
   width: 100%;
   padding: 0 0 20px 0;
@@ -228,6 +231,7 @@ color:rgb(15, 0, 0);
 }
 
 .prices__together {
+  padding: 20px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -342,10 +346,9 @@ color:rgb(15, 0, 0);
     background-image: url(./img/device_big.jpg);
   }
 
-
   .info-desk__icon {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
 
   .info-desk__title {
@@ -359,7 +362,12 @@ color:rgb(15, 0, 0);
   }
 
   .info-desk__group {
-    padding: 20px 0 20px 15%;  
+    padding: 30px 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    width: 90%;
   }
 
   .offer__descr {
@@ -413,34 +421,48 @@ color:rgb(15, 0, 0);
 
 
 @media (max-width:1024px) and (min-width:450px) {
-
-
+  
   .info-desk__name {
     padding: 30px 50px;
   }
 
+  .info-desk {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
   .info-desk__group {
-    padding: 20px;
+    width: 80%;
+    padding: 5px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .info-desk__icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin: 0;
   }
 
   .info-desk__title {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     white-space: pre-line;
+    color: rgb(255, 255, 255);
   }
 
   .info-desk__text {
-    font-size: 0.6rem;
+    font-size: 1rem;
     white-space: pre-line;
+    color: rgb(224, 223, 223);
   }
 
   .info-desk__descritpion {
-    margin: 10px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
   }
 
   .offer__title {
@@ -449,12 +471,20 @@ color:rgb(15, 0, 0);
 
   .offer__group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  .offer__descr {
+    text-align: center;
   }
 
   .offer__point {
-    width: 99%;
+    width: 50%;
     padding: 0
+  }
+
+  .offer__photo {
+    width: 80%;
   }
 
   .gallery__page {
@@ -469,14 +499,35 @@ color:rgb(15, 0, 0);
     text-align: center;
   }
 
+  .prices__title {
+    padding: 20px;
+  }
+
   .prices__together {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
+    flex-wrap: wrap;
   }
 
   .prices__rent {
-    width: 70%;
+    width: 250px;
+    padding: 2%;
+    margin: 10px;
+  }
+
+  .regulations__all {
+    padding: 10px;
+  }
+
+  .regulations__descr {
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .regulations__icon{
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -496,6 +547,9 @@ color:rgb(15, 0, 0);
 
   .info-desk__group {
     padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .info-desk__icon {
