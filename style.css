@@ -520,6 +520,7 @@ color:rgb(15, 0, 0);
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
+    width: 80%;
   }
 
   .offer__title {
@@ -552,6 +553,7 @@ color:rgb(15, 0, 0);
 
   .prices__rent {
     width: 70%;
+    margin: 5px;
   }
 
   .gallery__page {
