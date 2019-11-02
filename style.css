@@ -609,6 +609,8 @@ color:rgb(15, 0, 0);
 
   .prices__rent {
     width: 70%;
+    margin: 10px 15% 10px 15%;
+    padding: 0;
   }
 
   .gallery__page {
