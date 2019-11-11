@@ -10,13 +10,13 @@ offerImages.forEach((offer) => {
 const slider = tns({
   "container": ".slider",
   "items": 1,
-  "speed": 500,
+  "speed": 300,
   "controls": false,
   "autoplayButtonOutput": false,
   "nav": false,
   "autoplay": true,
   "autowidth": true,
   "autoplayHoverPause": true,
-  "autoplayTimeout": 4000,
+  "autoplayTimeout": 4500,
   "swipeAngle": false
 })
