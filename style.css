@@ -229,7 +229,7 @@ border-bottom: 2px solid black;
 
 .offer__photo:hover {
 cursor: pointer;
-box-shadow: 0 0 15px white;
+box-shadow: 0 0 10px white;
 }
 
 .offer__photo__inside--active {
